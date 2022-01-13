@@ -53,9 +53,10 @@ const gameObject = () => ({
                 steals: "4",
                 blocks: "11",
                 slamDunks: "1",
-            },
+            }
+        }
+    },
     away: {
-
         teamName: "Charlotte Hornets",
         colors: "Turquoise, Purple",
         players: {
@@ -96,7 +97,7 @@ const gameObject = () => ({
                 blocks: "1",
                 slamDunks: "0",
             },
-                "Brendan Haywood ": {
+            "Brendan Haywood ": {
                 number: "33",
                 shoe: "15",
                 points: "6",
@@ -106,13 +107,22 @@ const gameObject = () => ({
                 blocks: "5",
                 slamDunks: "12",
             },
-        }}
-    }}
+        }
+
+    }
+
 });
 gameObject()
-  
-  function awayTeamName() {
-      let object = gameObject()
-      return object['away']['teamName']
-  }
-  console.log(awayTeamName())
+
+// function homeTeamName() {
+//     let object = gameObject()
+//     return object['home']['teamName']
+// }
+
+// console.log(homeTeamName())
+
+function awayTeamName() {
+    let object = gameObject()
+    return object['away']['teamName']
+}
+console.log(awayTeamName())
